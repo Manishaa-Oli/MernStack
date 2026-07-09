@@ -7,12 +7,13 @@ import firstRoute from "./src/routes/firstRoute.js"
 import productRoutes from "./src/routes/productRoutes.js"
 import userRoute from "./src/routes/userRoute.js"
 import mongoose from "mongoose"
+import cors from "cors"
 let app=express()
 app.listen(8000,()=>{
     console.log("application is listening at port 8000")
     mongoose.connect("mongodb://localhost:27017/cosmos")
 })
-
+app.use(cors())//enable browser(frontend ) to communicate with backend
 app.use(json())//makes our system capable to take data
 app.use(firstRoute)
 app.use("/product",productRoutes);

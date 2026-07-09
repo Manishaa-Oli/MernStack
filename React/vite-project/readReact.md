@@ -115,3 +115,9 @@ index.html->main.jsx-> CosmosApp.jsx->CosmosLink.jsx-> CosmosRoute.jsx
 
 - Static Route : `path="/job"`
 - Dynamic Route: `path="/job/:id1/name/:id2"`
+
+### Date: 2083-03-19
+
+### Form
+
+#### To learn how to create form
